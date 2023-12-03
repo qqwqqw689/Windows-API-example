@@ -5,6 +5,7 @@ int main() {
     WCHAR buffer[32767];
 
     DWORD result = GetEnvironmentVariable(L"PATH", buffer, sizeof(buffer));
+    // wchar_t : L""
 
     if (result == 0) {
         printf("The environment variable \"PATH\" was not found.\n");
