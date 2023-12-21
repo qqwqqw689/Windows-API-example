@@ -7,6 +7,7 @@ void _tmain(int argc, TCHAR* argv[])
     STARTUPINFO si;
     PROCESS_INFORMATION pi;
 
+    // ZeroMemory : Fills a block of memory with zeros.
     ZeroMemory(&si, sizeof(si));
     si.cb = sizeof(si);
     ZeroMemory(&pi, sizeof(pi));
