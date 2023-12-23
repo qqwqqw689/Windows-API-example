@@ -10,6 +10,7 @@ void _tmain(int argc, TCHAR* argv[])
     // ZeroMemory : Fills a block of memory with zeros.
     ZeroMemory(&si, sizeof(si));
     si.cb = sizeof(si);
+    // cb : The size of the structure, in bytes.
     ZeroMemory(&pi, sizeof(pi));
 
     if (argc != 2)
